@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## ダウンロード
 <div align="center">
     <img src="../img/how_to_install/1.png" alt="1" width="80%">
