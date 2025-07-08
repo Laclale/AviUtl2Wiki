@@ -3,8 +3,8 @@ site_name: AviUtl ExEdit2 Wiki
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  homepage: https://github.com/Hallkun19/AviUtl2Wiki
+repo_url: https://github.com/Hallkun19/Aviutl2Wiki
+repo_name: Hallkun19/AviUtl2Wiki
 
 theme:
   name: material
