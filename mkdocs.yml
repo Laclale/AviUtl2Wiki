@@ -11,7 +11,7 @@ theme:
   logo: img/logo.png
   palette:
     - scheme: default
-      primary: blue
+      primary: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -28,8 +28,8 @@ nav:
     - 導入方法: how_to_install.md
     - 基本的な使い方: how_to_use.md
 
-    - プラグイン: plugins.md
-    - スクリプト: scripts.md
+  - プラグイン: plugins.md
+  - スクリプト: scripts.md
   - AviUtlとの違い: aviutl_diff.md
 
 markdown_extensions:
@@ -37,3 +37,4 @@ markdown_extensions:
   - md_in_html
   - pymdownx.details
   - admonition
+  - pymdownx.emoji:
