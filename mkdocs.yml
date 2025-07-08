@@ -1,0 +1,39 @@
+site_name: AviUtl ExEdit2 Wiki
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  homepage: https://github.com/Hallkun19/AviUtl2Wiki
+
+theme:
+  name: material
+  logo: img/logo.png
+  palette:
+    - scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+
+nav:
+  - ホーム: index.md
+  - はじめに:
+    - 導入方法: how_to_install.md
+    - 基本的な使い方: how_to_use.md
+
+    - プラグイン: plugins.md
+    - スクリプト: scripts.md
+  - AviUtlとの違い: aviutl_diff.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - admonition
