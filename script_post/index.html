@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../how_to_install_script/">
+        <link rel="prev" href="../scripts/">
       
       
         <link rel="next" href="../how_to_install_plugin/">
@@ -20,7 +20,7 @@
     
     
       
-        <title>AviUtl2でも使用できるスクリプト一覧 - AviUtl ExEdit2 Wiki</title>
+        <title>スクリプト投稿フォーム - AviUtl ExEdit2 Wiki</title>
       
     
     
@@ -76,6 +76,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AviUtl2でも使用できるスクリプト一覧
+              スクリプト投稿フォーム
             
           </span>
         </div>
@@ -515,6 +520,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    スクリプト一覧
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -523,12 +548,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    AviUtl2でも使用できるスクリプト一覧
+    スクリプト投稿フォーム
   </span>
   
 
@@ -682,6 +709,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -699,77 +728,37 @@
   
 
 
-  <h1>AviUtl2でも使用できるスクリプト一覧</h1>
+<h1 id="_1">スクリプト投稿フォーム</h1>
+<p>このページでは、このWikiに掲載するAviUtl2のスクリプトを投稿できます。
+投稿されたスクリプトは、</p>
+<hr />
+<div class="script-form-container">
+  <form action="https://docs.google.com/forms/d/e/1FAIpQLScf7Go-ZSdZKM5q3C1Tb85CtB0n78u1joIhXEIV0lPwI4QVcA/formResponse" method="POST" target="_blank">
+    <label for="script_name"><b>スクリプト名</b></label><br>
+    <input type="text" id="script_name" name="entry.1987768841" required style="width:100%;margin-bottom:1em;" placeholder="例：サンプルスクリプト"><br>
 
-<p>AviUtl2では、無印AviUtlのスクリプトの互換性がややあります。<br>
-以下のスクリプトは、AviUtl2での動作が確認されているスクリプトです。<br>
-もし新たに互換性のあるスクリプトを見つけた場合は、ページのコメント機能を使用して教えていただけると助かります。<br><br></p>
-<details class="note">
-<summary>AviUtlスクリプト一式20160828</summary>
-<p>ダウンロードは<a href="https://bowlroll.net/file/3777">こちら</a>です。
-ANM_ssdやTA_ssdなどの、便利なスクリプトが多数含まれています。</p>
-</details>
-<details class="note">
-<summary>ExtremeTransition</summary>
-<p>ダウンロードは<a href="https://github.com/sasimi0343/NotAviutl/tree/master/ExtremeTransition">こちら</a>です。
-テキストの登場のアニメーションが楽に作成できるスクリプトです。</p>
-</details>
-<details class="note">
-<summary>AutoClipping_M</summary>
-<p>ダウンロードは<a href="https://github.com/Mr-Ojii/AviUtl-AutoClipping_M-Script">こちら</a>です。
-オブジェクトの余白部分のクリッピングを自動で行うスクリプトです。</p>
-</details>
+    <label for="description"><b>説明</b></label><br>
+    <textarea id="description" name="entry.1692526079" rows="4" required style="width:100%;margin-bottom:1em;" placeholder="スクリプトの概要や使い方"></textarea><br>
+
+    <label for="url"><b>ダウンロードURL（永続リンク推奨）</b></label><br>
+    <input type="url" id="url" name="entry.1543249046" required style="width:100%;margin-bottom:1em;" placeholder="https://example.com/script.lua"><br>
+
+    <label for="author"><b>制作者名</b></label><br>
+    <input type="text" id="author" name="entry.1306686339" required style="width:100%;margin-bottom:1em;" placeholder="例：山田太郎"><br>
+
+    <label for="sns"><b>制作者SNS等リンク（任意）</b></label><br>
+    <input type="url" id="sns" name="entry.965385612" style="width:100%;margin-bottom:1em;" placeholder="https://twitter.com/yourname"><br>
+
+    <button type="submit" style="background:#4051b5;color:#fff;padding:0.7em 2em;border:none;border-radius:4px;font-size:1em;">投稿する</button>
+  </form>
+  <p style="font-size:0.9em;color:#666;margin-top:1em;">※投稿内容は反映するまで時間がかかる場合があります。不必要な情報等は送らないでください。</p>
+</div>
+
+<hr />
 
 
 
 
-
-  <h2 id="__comments">Comments</h2>
-  <!-- Insert generated snippet here -->
-<script src="https://giscus.app/client.js"
-        data-repo="Hallkun19/Aviutl2Wiki"
-        data-repo-id="R_kgDOPI9MGQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOPI9MGc4CsqGf"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="ja"
-        crossorigin="anonymous"
-        async>
-</script>
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
-
-    /* Set palette on initial load */
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object") {
-      var theme = palette.color.scheme === "slate" ? "dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
-    }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
 
                 
               </article>
