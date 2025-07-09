@@ -23,6 +23,7 @@ theme:
     - navigation.tabs
   custom_dir: overrides
 
+
 nav:
   - ホーム: index.md
   - はじめに:
@@ -31,10 +32,12 @@ nav:
 
   - スクリプト: 
     - スクリプトの導入方法: how_to_install_script.md
-    - AviUtl2でも使用できるスクリプト一覧: compatible_scripts.md
+    - スクリプト一覧: scripts.md
+    - スクリプト投稿フォーム: script_post.md
   - プラグイン:
     - プラグインの導入方法: how_to_install_plugin.md
-    - AviUtl2でも使用できるプラグイン一覧: compatible_plugins.md
+    - プラグイン一覧: plugins.md
+    - プラグイン投稿フォーム: plugin_post.md
   - AviUtlとの違い: aviutl_diff.md
   - よくある質問: faq.md
 
@@ -43,4 +46,3 @@ markdown_extensions:
   - md_in_html
   - pymdownx.details
   - admonition
-  - pymdownx.emoji:
