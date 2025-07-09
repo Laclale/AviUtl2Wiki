@@ -47,6 +47,7 @@ ROV非対応のGPUでAviutl2を起動した際に発生するようです。ROV�
 |NVIDIA GeForce|AMD Radeon|Intel Graphics (CPU内蔵)|
 |----|----|----|
 |GTX 900番台以降|RX Vegaシリーズ以降|第5世代以降※|
+
 ※第4世代も対応しているが、最新ドライバを適用すると非対応化する（[脆弱性対策のため](https://www.nichepcgamer.com/archives/vulnerability-in-intel-4th-gen-haswell-core-4000-series-disable-directx12.html)）
 ROVは[DirectX Capabilities Viewer](https://github.com/microsoft/DxCapsViewer)などでも確認できます。
 
