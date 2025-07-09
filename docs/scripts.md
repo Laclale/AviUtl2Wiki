@@ -1,19 +1,22 @@
-# スクリプト一覧
+このページでは、AviUtl2で利用できるスクリプト/プラグインを一覧で紹介しています。
+AviUtl2で動くスクリプト/プラグインを発見・自作された方は、ぜひ[投稿フォーム](./script_post.md)から投稿してください。
 
-!!! Warning "現在制作中です"
 
-このページでは、AviUtl2で利用できるスクリプトを一覧で紹介しています。
-AviUtl2で動くスクリプトを発見・自作された方は、ぜひ[スクリプト投稿フォーム](./script_post.md)から投稿してください。
+!!! info "スクリプトの導入方法"
+    スクリプトの導入方法がわからない場合は、[スクリプトの導入方法](./how_to_install_script.md)のページを参照してください。
 
+!!! Warning "注意"
+    このページに掲載されているものは基本管理人が目を通していますが、稀に不適切な内容が含まれる場合があります。<br>
+    その場合は、Twitterの[@halkun19](https://twitter.com/halkun19)までご連絡ください。<br>
 ---
 
 <div id="script-list-container">
-  <p>スクリプト一覧を読み込んでいます...</p>
+  <p>一覧を読み込んでいます...</p>
 </div>
 
 <script>
   // ▼▼▼ 下の行のURLを、ステップ1でコピーしたご自身のウェブアプリURLに書き換えてください ▼▼▼
-  const GAS_URL = 'https://script.google.com/macros/s/AKfycbwbx9H8i40DeeuVj8_M8bmEd6na36e-Bq6EeUBPGej_8d3zP7YVGNnD1UP7SySMPRQRfg/exec';
+  const GAS_URL = 'https://script.google.com/macros/s/AKfycbykN3EGL9VatVqYz0JphxScas47jj-2we1tUWIyraOpJQIWrX-M77sQIW6dDT7fKETm/exec';
   // ▲▲▲ 上の行のURLを、ステップ1でコピーしたご自身のウェブアプリURLに書き換えてください ▲▲▲
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -29,7 +32,7 @@ AviUtl2で動くスクリプトを発見・自作された方は、ぜひ[スク
           let tableHtml = `
             <table>
               <thead>
-                <tr><th>スクリプト名</th><th>説明</th><th>制作者</th><th>ダウンロード</th></tr>
+                <tr><th>種別</th><th>スクリプト名</th><th>説明</th><th>制作者</th><th>ダウンロード</th></tr>
               </thead>
               <tbody>`;
 
@@ -38,6 +41,7 @@ AviUtl2で動くスクリプトを発見・自作された方は、ぜひ[スク
             const description = script.description.replace(/\n/g, '<br>');
             tableHtml += `
               <tr>
+                <td>${script.script_or_plugin || ''}</td>
                 <td>${script.name || ''}</td>
                 <td>${description || ''}</td>
                 <td>${author || ''}</td>
@@ -57,8 +61,3 @@ AviUtl2で動くスクリプトを発見・自作された方は、ぜひ[スク
       });
   });
 </script>
-
----
-
-!!! info "スクリプトの導入方法"
-    スクリプトの導入方法がわからない場合は、[スクリプトの導入方法](./how_to_install_script.md)のページを参照してください。

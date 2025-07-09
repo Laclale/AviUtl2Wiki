@@ -30,14 +30,10 @@ nav:
     - 導入方法: how_to_install.md
     - 基本的な使い方: how_to_use.md
 
-  - スクリプト: 
-    - スクリプトの導入方法: how_to_install_script.md
-    - スクリプト一覧: scripts.md
-    - スクリプト投稿フォーム: script_post.md
-  - プラグイン:
-    - プラグインの導入方法: how_to_install_plugin.md
-    - プラグイン一覧: plugins.md
-    - プラグイン投稿フォーム: plugin_post.md
+  - スクリプト / プラグイン: 
+    - 導入方法: how_to_install_script.md
+    - 利用できるもの一覧: scripts.md
+    - 投稿フォーム: script_post.md
   - AviUtlとの違い: aviutl_diff.md
   - よくある質問: faq.md
 

@@ -1,0 +1,58 @@
+/* スクリプト投稿フォームの入力欄の文字サイズを大きくし、ダーク/ライト両対応にする */
+
+/* 入力欄の共通スタイル */
+#script_name,
+#description,
+#url,
+#author,
+#sns {
+  font-size: 15px;
+  color: inherit;
+  background: inherit;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 0.5em;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ダークモード対応（mkdocs-material等のbody[data-md-color-scheme]を利用） */
+body[data-md-color-scheme="dark"] #script_name,
+body[data-md-color-scheme="dark"] #description,
+body[data-md-color-scheme="dark"] #url,
+body[data-md-color-scheme="dark"] #author,
+body[data-md-color-scheme="dark"] #sns {
+  background: #2e303e;
+  color: #fff;
+  border-color: #444;
+}
+
+body[data-md-color-scheme="dark"] .md-typeset .script-form-container {
+  background: #23272e !important;
+  border-color: #444 !important;
+}
+
+/* ライトモード用の明示的な背景色 */
+body[data-md-color-scheme="default"] #script_name,
+body[data-md-color-scheme="default"] #description,
+body[data-md-color-scheme="default"] #url,
+body[data-md-color-scheme="default"] #author,
+body[data-md-color-scheme="default"] #sns {
+  background: #fff;
+  color: #222;
+  border-color: #bbb;
+}
+
+body[data-md-color-scheme="default"] .md-typeset .script-form-container {
+  background: #fafbfc !important;
+  border-color: #ccc !important;
+}
+
+/* フォーム全体の枠もクラスで調整できるように */
+.script-form-container {
+  max-width: 500px;
+  margin: 2em 0;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafbfc;
+}
