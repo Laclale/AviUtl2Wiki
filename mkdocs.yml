@@ -34,8 +34,12 @@ nav:
     - 導入方法: how_to_install_script.md
     - 利用できるもの一覧: scripts.md
     - 投稿フォーム: script_post.md
-  - AviUtlとの違い: aviutl_diff.md
-  - よくある質問: faq.md
+
+  - よくある質問: 
+    - よくある質問: faq.md
+    - エラーコード: error_code.md
+    - AviUtlとの違い: aviutl_diff.md
+
 
 markdown_extensions:
   - attr_list
