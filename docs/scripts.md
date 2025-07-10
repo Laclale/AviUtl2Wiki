@@ -6,8 +6,8 @@ AviUtl2で動くスクリプト/プラグインを発見・自作された方は
     スクリプトの導入方法がわからない場合は、[スクリプトの導入方法](./how_to_install_script.md)のページを参照してください。
 
 !!! Warning "注意"
-    このページに掲載されているものは基本管理人が目を通していますが、稀に不適切な内容が含まれる場合があります。<br>
-    その場合は、Twitterの[@halkun19](https://twitter.com/halkun19)までご連絡ください。<br>
+    このページに掲載されているものは基本管理人が目を通していますが、稀に不適切な内容が含まれる場合があります。
+    その場合は、Twitterの[@halkun19](https://twitter.com/halkun19)までご連絡ください。
 ---
 
 <div id="script-list-container">
