@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../aviutl_diff/">
+        <link rel="prev" href="../script_post/">
       
+      
+        <link rel="next" href="../error_code/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -263,36 +265,20 @@
         
   
   
-  
-    <li class="md-tabs__item">
-      <a href="../aviutl_diff/" class="md-tabs__link">
-        
-  
-    
-  
-  AviUtlとの違い
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
     
   
   
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
   
   よくある質問
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -545,23 +531,40 @@
       
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../aviutl_diff/" class="md-nav__link">
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
         
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
-    AviUtlとの違い
+    よくある質問
   </span>
   
 
-      </a>
-    </li>
-  
-
-    
-      
-      
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            よくある質問
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
     
@@ -584,6 +587,54 @@
   
 
       </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    エラーコード
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aviutl_diff/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AviUtlとの違い
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
       
     </li>
   
@@ -628,17 +679,59 @@
 <h1 id="_1">よくある質問</h1>
 <p>ここではAviUtl2に関するよくある質問とその回答をまとめています。
 もし、このページに載っていない質問がある場合は、<a href="#__comments">コメント</a>で質問をしてみてください。<br><br></p>
-<details class="note">
+<details class="question">
 <summary>L-SMASH WorksとInputPipePluginは必要？</summary>
 <p>いいえ、必要ありません。AviUtl2では、デフォルトからL-SMASH WorksとInputPipePluginと同等の機能が組み込まれています。</p>
+</details>
+<details class="question">
+<summary>無印AviUtlのプロジェクトファイルを開ける？</summary>
+<p>無印AviUtlのプロジェクトファイルは、AviUtl2では基本開くことができません。シーンとして読み込めはしますが、表示が崩れます。</p>
+</details>
+<details class="question">
+<summary>MacやLinuxで使える？</summary>
+<p>公式にはWindows 10/11のみ対応です。Wine等の互換レイヤーでも動作しない場合が多いです。</p>
+</details>
+<details class="question">
+<summary>プラグインやスクリプトはどこに入れる？</summary>
+<p><code>C:\ProgramData\aviutl2</code>内のPluginまたはScriptフォルダに格納します。Program Files内ではありません。ProgramDataは隠しフォルダなので表示設定に注意してください。</p>
+</details>
+<details class="question">
+<summary>従来のプラグインやスクリプトは使える？</summary>
+<p>AviUtl2は64bitアプリのため、32bit用の従来プラグイン・スクリプトは多くが非対応です。対応版の公開を待つ必要があります。一部スクリプトはUTF-8で保存し直すと動作する場合もあります。</p>
+</details>
+<details class="question">
+<summary>PSDToolKit（立ち絵表示ツール）は使える？</summary>
+<p>現状未対応です。今後の更新をお待ちください。</p>
+</details>
+<details class="question">
+<summary>タイムラインや再生ウィンドウを分離できる？</summary>
+<p>AviUtl2ではウィンドウの分離配置はできません。</p>
+</details>
+<details class="failure">
+<summary>Microsoft Edgeでインストーラーがダウンロードできない！</summary>
+<p>Edgeのセキュリティ機能でブロックされる場合、ダウンロードリストから「…」→「保存」→「詳細表示」→「保持する」でダウンロードできます。</p>
+</details>
+<details class="failure">
+<summary>インストールしたが起動しない！</summary>
+<p><a href="../error_code/">エラーコード</a>ページの対処法を参照してください。</p>
+</details>
+<details class="failure">
+<summary>起動時にグラフィック関連のエラーが出る！</summary>
+<p>グラフィックボードやドライバとの相性が原因の場合があります。ドライバを最新版に更新、または安定していたバージョンに戻すなどをお試しください。</p>
+</details>
+<details class="failure">
+<summary>x264guiExが導入できない！</summary>
+<p>exe_filesフォルダはaviutl2.exeと同じ場所にコピーし、pluginsフォルダの中身は<code>C:\ProgramData\aviutl2\Plugin</code>にコピーしてください。
+参考: <a href="http://x.com/rigaya34589/status/1942572258792464757">Xの投稿</a></p>
+</details>
+<details class="failure">
+<summary>起動時にCreateDevice failed等のエラーでPCが落ちる・再起動する！</summary>
+<p>基本はセキュリティソフトが悪さをしているので、設定を見直してみてください。<br>
+セキュリティソフト設定で解決しない場合、OSやグラフィックドライバ、ハードウェアとの相性が原因の可能性があります。特に古いOS（Windows 7等）は動作対象外です。ご利用環境が動作要件を満たしているかご確認ください。</p>
 </details>
 <details class="note">
 <summary>◯◯スクリプトが導入できない！</summary>
 <p>ほとんどのdllファイルはAviUtl2で非対応であり、開発用のファイル等もまだ公開されていません。ですので、気長に待ちましょう。</p>
-</details>
-<details class="note">
-<summary>無印AviUtlのプロジェクトファイルを開ける？</summary>
-<p>無印AviUtlのプロジェクトファイルは、AviUtl2では基本開くことができません。シーンとして読み込めはしますが、表示が崩れます。</p>
 </details>
 <details class="note">
 <summary>フィルタが全体に適用されない！</summary>
@@ -653,79 +746,36 @@
 <p>現在は未実装とのこと。エイリアスの保存フォルダは<code>C:\ProgramData\AviUtl2\Alias</code>にあります。ここから削除ができます。</p>
 </details>
 <details class="note">
-<summary>UIの文字色やサイズを変更したい！</summary>
-<p><code>C:\ProgramData\AviUtl2</code>にある<code>style.conf</code>を編集することで変更できます。</p>
-</details>
-<details class="note">
-<summary>インストールしたが起動しない！</summary>
-<p>Windows DefenderなどのセキュリティソフトがAviUtl2のファイル（pipe32aui.exeなど）を誤検知し、隔離・削除している場合があります。セキュリティソフトの履歴を確認し、該当ファイルを許可または復元してください。
-参考: <a href="https://x.com/yuduki_yu_jp/status/1942466658255397217">Xの投稿</a></p>
-</details>
-<details class="note">
-<summary>MacやLinuxで使える？</summary>
-<p>公式にはWindows 10/11のみ対応です。Wine等の互換レイヤーでも動作しない場合が多いです。</p>
-</details>
-<details class="note">
-<summary>起動時にグラフィック関連のエラーが出る！</summary>
-<p>グラフィックボードやドライバとの相性が原因の場合があります。ドライバを最新版に更新、または安定していたバージョンに戻すなどをお試しください。</p>
-</details>
-<details class="note">
-<summary>プロジェクトのフレームレートを60fpsにしたい！</summary>
-<p>タイムラインの「Root」オブジェクト設定からフレームレートを変更できます。</p>
-</details>
-<details class="note">
 <summary>再生を停止すると開始位置に戻る！</summary>
 <p>再生ボタンを右クリックし、「再生後に停止位置を移動しない」等の項目を選択してください。</p>
-</details>
-<details class="note">
-<summary>プラグインやスクリプトはどこに入れる？</summary>
-<p><code>C:\ProgramData\aviutl2</code>内のPluginまたはScriptフォルダに格納します。Program Files内ではありません。ProgramDataは隠しフォルダなので表示設定に注意してください。</p>
-</details>
-<details class="note">
-<summary>従来のプラグインやスクリプトは使える？</summary>
-<p>AviUtl2は64bitアプリのため、32bit用の従来プラグイン・スクリプトは多くが非対応です。対応版の公開を待つ必要があります。一部スクリプトはUTF-8で保存し直すと動作する場合もあります。</p>
-</details>
-<details class="note">
-<summary>PSDToolKit（立ち絵表示ツール）は使える？</summary>
-<p>現状未対応です。今後の更新をお待ちください。</p>
-</details>
-<details class="note">
-<summary>x264guiExが導入できない！</summary>
-<p>exe_filesフォルダはaviutl2.exeと同じ場所にコピーし、pluginsフォルダの中身は<code>C:\ProgramData\aviutl2\Plugin</code>にコピーしてください。
-参考: <a href="http://x.com/rigaya34589/status/1942572258792464757">Xの投稿</a></p>
 </details>
 <details class="note">
 <summary>Duplicate effects with the same key existエラーが出る！</summary>
 <p>Scriptフォルダ内に同名のスクリプトファイルが複数ある場合に発生します。不要な方を削除してください。</p>
 </details>
 <details class="note">
-<summary>タイムラインのレイヤーの高さを変えたい！</summary>
-<p>style.confのLayerHeight値を編集してください。</p>
-</details>
-<details class="note">
 <summary>スクリプト適用時にオブジェクトが透明・真っ黒になる！</summary>
 <p>スクリプト設定内の「アルファ」チェックを外すと正常に表示される場合があります。</p>
-</details>
-<details class="note">
-<summary>Microsoft Edgeでインストーラーがダウンロードできない！</summary>
-<p>Edgeのセキュリティ機能でブロックされる場合、ダウンロードリストから「…」→「保存」→「詳細表示」→「保持する」でダウンロードできます。</p>
-</details>
-<details class="note">
-<summary>タイムラインや再生ウィンドウを分離できる？</summary>
-<p>AviUtl2ではウィンドウの分離配置はできません。</p>
-</details>
-<details class="note">
-<summary>UIの表示がぼやける！</summary>
-<p>Windowsのディスプレイ設定でスケーリングが100%以外だとぼやける場合があります。100%に戻すか、aviutl2.exeのプロパティ→互換性→高DPI設定の変更で調整してください。</p>
 </details>
 <details class="note">
 <summary>ウィンドウを最大化して閉じても次回起動時に元に戻る！</summary>
 <p>現在の仕様です。毎回調整が必要です。</p>
 </details>
 <details class="note">
-<summary>起動時にCreateDevice failed等のエラーでPCが落ちる・再起動する！</summary>
-<p>基本はセキュリティソフトが悪さをしているので、設定を見直してみてください。<br>
-セキュリティソフト設定で解決しない場合、OSやグラフィックドライバ、ハードウェアとの相性が原因の可能性があります。特に古いOS（Windows 7等）は動作対象外です。ご利用環境が動作要件を満たしているかご確認ください。</p>
+<summary>UIの表示がぼやける！</summary>
+<p>Windowsのディスプレイ設定でスケーリングが100%以外だとぼやける場合があります。100%に戻すか、aviutl2.exeのプロパティ→互換性→高DPI設定の変更で調整してください。</p>
+</details>
+<details class="note">
+<summary>UIの文字色やサイズを変更したい！</summary>
+<p><code>C:\ProgramData\AviUtl2</code>にある<code>style.conf</code>を編集することで変更できます。</p>
+</details>
+<details class="note">
+<summary>タイムラインのレイヤーの高さを変えたい！</summary>
+<p>style.confのLayerHeight値を編集してください。</p>
+</details>
+<details class="note">
+<summary>プロジェクトのフレームレートを60fpsにしたい！</summary>
+<p>タイムラインの「Root」オブジェクト設定からフレームレートを変更できます。</p>
 </details>
 
 
