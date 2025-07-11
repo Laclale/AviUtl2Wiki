@@ -8,7 +8,7 @@ comments: true
 もし、このページに載っていない質問がある場合は、[コメント](#__comments)で質問をしてみてください。<br><br>
 
 ??? question "L-SMASH WorksとInputPipePluginは必要？"
-    いいえ、必要ありません。AviUtl2では、デフォルトからL-SMASH WorksとInputPipePluginと同等の機能が組み込まれています。
+    AviUtl2では、デフォルトからL-SMASH WorksとInputPipePluginと同等の機能が組み込まれています。ですが、L-SMASH Worksの方が対応している動画形式が多いため、L-SMASH Worksを導入することをおすすめします。
 
 ??? question "無印AviUtlのプロジェクトファイルを開ける？"
     無印AviUtlのプロジェクトファイルは、AviUtl2では基本開くことができません。シーンとして読み込めはしますが、表示が崩れます。
